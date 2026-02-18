@@ -1,9 +1,10 @@
 import sys
 import time
+import numpy as np
 sys.stdin=open("input_1.inp","r")
 sys.stdout=open("output.out","w")
 n=int(input())
-a=list(map(int,input().split()))
+a=np.array(list(map(float,input().split())))
 b=[0]*n
 def combine(a,l,mid,r):
     i,j=l,mid+1
